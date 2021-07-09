@@ -9,7 +9,7 @@ class PythonSays():
         messages = message.split('\n')
         longest_line_size = (max([len(m) for m in messages]))
         line = '  ' + '-' * longest_line_size
-        print(linha)
+        print(line)
         if len(messages)==1:
             print(f'< {messages} >')
         else:
