@@ -8,7 +8,7 @@ class PythonSays():
     def say(self, message):
         messages = message.split('\n')
         longest_line_size = (max([len(m) for m in messages]))
-        linha = '  ' + '-' * longest_line_size
+        line = '  ' + '-' * longest_line_size
         print(linha)
         if len(messages)==1:
             print(f'< {messages} >')
@@ -18,11 +18,47 @@ class PythonSays():
                 print(f'| {messages[str_idx+1].center(longest_line_size)} |')
             
             print(f'\\ {messages[-1].center(longest_line_size)} /')
-        print(linha)
-        print(vader_ascii)
+        print(line)
+        print(general_grievous)
+        
+general_grievous = '''
+                       \\\\ 
+                         \\\                                      
+                            \\    ...... .....                                  
+                                .... ..........*.                               
+                              *  .% *.  .......         .                       
+                        .    / ...@...........  @   /   ..                      
+                     ....   ** ...& ..........  &   */  ..                      
+                  ....      // ...@........ ..  &    *  ......                  
+                ......   /*(/. ...@...........  @     #*.  ....                 
+                ....* #%  **. . ..@........... .&      ** &(....                
+                ..../ %&% *       @    ...      #        *&& .. .               
+                ..    %@#* %&@@@@@@#/ ...      #@@@@@@&(*%@(  ....              
+                    * #&(*/#&@@@/(%&@% ..    /@@%@%@@@&/ #%( ....               
+                 ... *(%%& (@@%%@@@/   .       *#@@%&@@**&(  ...                
+                  . .  #@@/  */*              ****/#/*  #@#.....                
+                   * ..  #@#**////**        * ****///////   ..                  
+                     .   */((@%((/**         **///(/##(/*   .                   
+                      /   **/@@@@%/***        /*/#@@@*/*   .                    
+                       %*   **@@@@(*         **/#@@@%    .                      
+                         /    @@%@(*         **/(#@&@   .                       
+                       /%#@.. *@@@&*    **** **/@@@@   .&                       
+                     #%%#@@@ ..*@&#**((*#/#%%#*/(&@* . @##&                     
+    *              /#&&(&@@@@ .%@@@*/(/////%#%/*@@@@. @@@@#@(                   
+                 */((&#@@@@@@@..&@**/%((@//%##(//@@&.@@@@@%#&(*                 
+               *//(%&#&&@@@@@@@ @@* /%%/@//##%(*/@@./@@@@@%%&#(/*               
+              /(/#%&@@@@&@@@@@@&//* /&((/(((%&(*/@@@@@@@@&%@@@&#**              
+             *//#%&@@@@((@@@@@&@@(* //(&%%%%##(*/@@@@@@@&%@@@@@&%*              
+         %@@*((##&@@@@@@@@@@@@@@@&**#@@@@@@@@@#**@@@@@@&&@@@@@@@&#/* %%         
+          @@*#%%&@@@@&@@@@%%@@&@@@**/@@@@@@@@@/*@@@@@@@@@@@@@@@@@%((            
+           ***@&@@&@@@@@&@@@@@&@@@@/(@@@@@@&@%/#@@@@@@@@@@@@@@@@@&&  *          
+           */*//@%&%@(@@&@@@@@@@@@/#/@&&@@@@@%&&@@@@@@@@@@@@@@@@@@  **          
+          //******%&@@@@@&@@@@@@@@@@/* **  ***/@@@@@@@@@@@@@@&@&    */*         
+          (/*** ***/&@@@@@@@@@@@@/**  *(   ** **/@@@@@@@@@@@@&  *   *((         
 
-ps = PythonSays()
-ps.say('Hello there, General Kenobi')
-ps.say('Hello there,\nGeneral Kenobi')
-ps.say('Hello\nthere,\nGeneral Kenobi')
-ps.say('Hello\nthere,\nGeneral\nKenobi')
+'''
+character = PythonSays()
+character.say('Hello there, General Kenobi')
+character.say('Hello there,\nGeneral Kenobi')
+character.say('Hello\nthere,\nGeneral Kenobi')
+character.say('Hello\nthere,\nGeneral\nKenobi')
